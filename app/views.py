@@ -36,13 +36,11 @@ def home(request):
                     from_=settings.TWILIO_NUMBER,
                     to=phone1
                 )
-                """
                 client.messages.create(
                     body="You've been matched! Visit http://localhost:8000/match/{} to view your match.".format(new_match.uid),
                     from_=settings.TWILIO_NUMBER,
                     to=phone2
                 )
-                """
             except:
                 return render(request, 'index.html', {'form': form, 'error': 'Invalid phone number.'})
 
