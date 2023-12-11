@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "app",
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,7 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+TWILIO_ACCOUNT_SID = 'AC1e70fa02b5f6fd5247da3dcfdc7ff05a'
+TWILIO_AUTH_TOKEN = 'df43557047a96ae55447dd209c820061'
+TWILIO_NUMBER = '+18338252780'
